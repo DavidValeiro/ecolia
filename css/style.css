@@ -45,3 +45,35 @@ header img {
     font-weight: bold;
     font-size: 3em;
 }
+
+/* .cont-pr .row * {
+    padding: 1rem 2rem;
+    background-color: #f5ad13;
+    border: 1px solid;
+}
+
+
+.cont-pr .row .card {
+    padding: 1rem 2rem;
+}
+
+.col {
+    padding: 1em;
+}
+
+.my-navbar-color {
+    background-color: rgb(245, 173, 19);
+}
+
+.mycolorbnt {
+    background-color: rgb(216, 121, 172);
+}
+
+.mycolorbnt:hover {
+    background-color: rgb(27, 245, 19);
+}
+
+.container-fluid h1 {
+    color:rgb(27, 245, 19);
+    font-size: 2.5vh;
+} */
