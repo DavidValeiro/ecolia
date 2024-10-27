@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+h2{
+    font-size: 4em !important; 
+}
+
 :root {
     --color1: rgb(47, 49, 210);
     --color2: rgb(235, 115, 30);
@@ -77,3 +81,5 @@ header img {
     color:rgb(27, 245, 19);
     font-size: 2.5vh;
 } 
+
+
