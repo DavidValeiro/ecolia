@@ -27,7 +27,7 @@
   <body>
 
     <!-- Menu -->
-    <nav class="navbar navbar-expand-lg my-navbar-color sticky-top d-block " ;>
+    <nav class="navbar navbar-expand-lg my-navbar-color sticky-top d-block px-4">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><strong>Ecomido</strong></a>
         <button
@@ -91,29 +91,29 @@
 
     <!-- pagina home -->
     <header>
-      <div id="inicio" class="container-fluid d-flex flex-column align-items-center justify-content-center w-100 h-100 position-relative">
-        <img id="logoMain" class="position-absolute top-0 start-45" src="./img/logo_ecomido.svg" alt="logo" id="logo" />
+      <div id="inicio" class="container-fluid d-flex flex-column align-items-center justify-content-center w-100 position-relative">
+        <img id="logoMain" class="position-absolute start-45" src="./img/logo_ecomido.svg" alt="logo" id="logo" />
         <div class="container-fluid d-flex flex-column align-items-center justify-content-center w-100 h-100">
-          <h1 class="w-100">Tu tienda</h1>
-          <h1 class="w-100">ecológica</h1>
-          <h1 class="w-100">de confianza</h1>
+          <h1 class="w-100 d-flex justify-content-start">Tu tienda</h1>
+          <h1 class="w-100 d d-flex justify-content-center">ecológica</h1>
+          <h1 class="w-100 d-flex justify-content-end">de confianza</h1>
         </div>
-        <img class="position-absolute position-absolute bottom-0 end-0" src="./img/tomate.png" alt="tomate" id="tomato" />
-        <img class="position-absolute top-0 start-0 translate-middle" src="./img/lechuga.png" alt="lechuga" id="lettuce" />
-        <img class="position-absolute position-absolute bottom-0 start-0" src="./img/cerezas.png" alt="cerezas" id="cherry" />
+        <img class="position-absolute bottom-0 end-0" src="./img/tomate.png" alt="tomate" id="tomato" />
+        <img class="position-absolute" src="./img/lechuga.png" alt="lechuga" id="lettuce" />
+        <img class="position-absolute bottom-0 start-0" src="./img/cerezas.png" alt="cerezas" id="cherry" />
       </div>
     </header>
 
     <!-- carousel de ofertas -->
     <section
       id="promo"
-      class="container-fluid d-flex flex-column align-items-center w-100 mt-5"
+      class="container-fluid d-flex flex-column align-items-center w-100 pt-5"
     >
       <h2>Ofertas</h2>
       <div id="carousel-1" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="row align-items-center m-5">
+            <div class="row align-items-center p-5 gap-3">
               <div class="col">
                 <div class="card">
                   <img
@@ -185,7 +185,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="row align-items-center m-5">
+            <div class="row align-items-center p-5">
               <div class="col">
                 <div class="card">
                   <img
@@ -287,7 +287,7 @@
       <div id="carousel-2" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="row align-items-center m-5">
+                <div class="row align-items-center p-5 gap-3">
                   <div class="col">
                     <div class="card">
                       <img
@@ -359,7 +359,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="row align-items-center m-5">
+                <div class="row align-items-center p-5">
                   <div class="col">
                     <div class="card">
                       <img
@@ -455,7 +455,7 @@
     <!-- carousel cocina con nosotros -->
      <section id="cook" class="container-fluid d-flex flex-column justify-content-center align-items-center w-100">
       <h2>Cocina con nosotros</h2>
-      <div id="carousel-3" class="carousel slide m-5">
+      <div id="carousel-3" class="carousel slide p-5">
         <div class="carousel-inner">
           <div class="carousel-item active w-100">
             <img src="https://placehold.co/1600x700/svg" class="d-block w-100" alt="...">
@@ -481,7 +481,7 @@
      <!-- carousel vuestros packs favoritos -->
      <section id="pack" class="container-fluid d-flex flex-column justify-content-center align-items-center w-100">
       <h2>Vuestros packs favoritos</h2>
-      <div id="carousel-4" class="carousel slide m-5">
+      <div id="carousel-4" class="carousel slide p-5">
         <div class="carousel-inner">
           <div class="carousel-item active w-100">
             <img src="https://placehold.co/1600x700/svg" class="d-block w-100" alt="...">
@@ -505,9 +505,9 @@
      </section>
 
      <!-- conoces nuestras marcas -->
-      <section id="brands" class="container-fluid d-flex flex-column justify-content-center align-items-center w-100">
+      <section id="brands" class="container-fluid d-flex flex-column justify-content-center align-items-center w-100 p-5">
         <h2>¿Conoces nuestras marcas?</h2>
-        <div class="row  d-flex align-items-center justify-content-center m-5 w-100 h-200px">
+        <div class="row  d-flex align-items-center justify-content-between w-100 mt-5 gap-3">
           <div class="col d-flex align-items-center justify-content-center">
             <img src="https://picsum.photos/200/200">
           </div>
@@ -530,10 +530,10 @@
       </section>
 
      <!-- donde estamos -->
-      <section id="where" class="container-fluid d-flex flex-column justify-content-center align-items-center w-100">
+      <section id="where" class="container-fluid d-flex flex-column justify-content-center align-items-center w-100 p-5">
         <h2>¿Dónde estamos?</h2>
 
-        <div class="row d-flex justify-content-center align-items-center w-100 my-5">
+        <div class="row d-flex justify-content-center align-items-center w-100 p-5">
           <div class="col d-flex justify-content-center w-100">
             <img src="./img/geo-alt.svg" class="d-block" height="80px" width="80px" alt="Simbolo pin maps">
             <h4>Calle príncipe de Vergara 24<br>28790, Madrid</h4>
@@ -547,32 +547,42 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.244059403667!2d-3.6823108225594785!3d40.425594371438244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228bce3633ab3%3A0xe1ad73fa3ec25907!2sC.%20del%20Pr%C3%ADncipe%20de%20Vergara%2C%2024%2C%20Salamanca%2C%2028001%20Madrid!5e0!3m2!1ses!2ses!4v1730055819705!5m2!1ses!2ses" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="row d-flex justify-content-center align-items-center w-100 my-5">
-          <div class="col w-auto d-flex flex-column justify-content-center align-items-center" >
+        <div class="row d-flex justify-content-center align-items-center w-100 px-5 mt-5">
+          <div class="col w-100 d-flex flex-column justify-content-center align-items-center" >
             <div>
               <h4>Pide hoy, recibe hoy</h4>
               <p>Entrega rápida en la franja horaria que mejor te venga</p>
             </div>
           </div>
-          <div class="col w-auto d-flex flex-column justify-content-center align-items-center">
+          <div class="col w-100 d-flex flex-column justify-content-center align-items-center">
             <div>
               <h4>Envío gratis</h4>
               <p>En compras superiores a 30€</p>
             </div>
           </div>
-          <div class="col w-auto d-flex flex-column justify-content-center align-items-center">
+          <div class="col w-100 d-flex flex-column justify-content-center align-items-center">
             <div>
               <h4>Folletos</h4>
               <p>Descubre las mejores ofertas</p>
             </div>
           </div>
         </div>
-   
-
-
-
-
       </section>
+
+      <footer class=" w-100 d-flex p-5 bg-white">
+          <div class="w-100 d-flex flex-column gap-3 ">
+            <h5>Recetas</h5>
+            <h5>Empleo</h5>
+            <h5>Atencion al cliente</h5>
+          </div>
+          <div class=" w-100 d-flex justify-content-end align-items-center gap-4">
+          <i class="bi bi-twitter-x fs-4"></i>
+          <i class="bi bi-facebook fs-4"></i>
+          <i class="bi bi-instagram fs-4"></i>
+          <i class="bi bi-tiktok fs-4"></i>
+          <i class="bi bi-youtube fs-4"></i>
+        </div>
+      </footer>
 
     <!-- javascript y enlaces js de bootstrap -->
     <script src="js/script.js"></script>
