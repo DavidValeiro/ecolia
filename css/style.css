@@ -15,7 +15,7 @@ body{
 #botonAsc{
     height: 5vh;
     position: fixed;
-    bottom: 11em;
+    bottom: 7em;
     right: 5em;
     z-index: 999;
 }
@@ -33,7 +33,7 @@ h2{
     --textBody: "Archivo", sans-serif;
 } 
 
-header {
+#inicio {
     width: 100%;
     height: 100vh !important;
     background-color: var(--color4) !important;
@@ -47,15 +47,10 @@ section{
     background-color: #fbfbf0;
 }
 
-header h1 {
-    color: var(--color1);
+#inicio h1 {
+    color: var(--color3);
     font-weight: bold;
     font-size: 10em !important;
-}
-
-#logoMain{
-    top:0 !important;
-    height: 15vh;
 }
 
 #cherry {
@@ -72,9 +67,10 @@ header h1 {
     top: -20% !important;
     left: -10% !important;;
     transform: rotate(45deg) !important;
+    
 }
 
-header img {
+#inicio img {
     height: 40vh;
 }
 
@@ -83,42 +79,7 @@ header img {
     height: 95vh !important;
 }
 
-#inicio h2 {
-    font-weight: bold;
-    font-size: 3em;
+#logoMain{
+    top: 0 !important;
+    height: 15vh !important;
 }
-
-
- .cont-pr .row * {
-    padding: 1rem 2rem;
-    background-color: #f5ad13;
-    border: 1px solid;
-}
-
-
-.cont-pr .row .card {
-    padding: 1rem 2rem;
-}
-
-.col {
-    padding: 1em;
-}
-
- .my-navbar-color {
-    background-color: rgb(245, 173, 19);
-} 
-
-.mycolorbnt {
-    background-color: rgb(216, 121, 172);
-}
-
-.mycolorbnt:hover {
-    background-color: rgb(27, 245, 19);
-}
-
-.container-fluid h1 {
-    color:var(--color3);
-    font-size: 2.5vh;
-} 
-
-
