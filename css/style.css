@@ -92,22 +92,32 @@ section{
 }
 
 .carousel {
-    background: #EEE;
+    background: unset;
     width: auto;
 }
   
 .carousel-cell {
     width: 25%;
     height: auto;
-    margin-right: 10px;
+    margin-right: 2em;
     border-radius: 5px;
     counter-increment: carousel-cell;
 }
 
+#carousel-2 {
+    padding: 0 10em;
+}
+
 #carousel-2 .carousel-cell {
     width: 100%;
+    height: 700px;
 }
-  
+
+#carousel-3 .carousel-cell {
+    width: 70%;
+    height: 700px;
+}
+
   /* cell number */
 .carousel-cell:before {
     display: block;
