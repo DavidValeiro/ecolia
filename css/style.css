@@ -58,12 +58,12 @@ section{
     height: 50vh !important ;
 }
 
-#tomato{
+#tomato {
     right: 2em !important;
     top: 10em !important;
 }
 
-#lettuce{
+#lettuce {
     top: -20% !important;
     left: -10% !important;;
     transform: rotate(45deg) !important;
@@ -82,4 +82,45 @@ section{
 #logoMain{
     top: 0 !important;
     height: 15vh !important;
+}
+
+#product h1 {
+    font-size: 6rem !important;
+    text-wrap: nowrap;
+}
+
+#product h2 {
+    font-size: 4rem !important;
+    text-wrap: nowrap;
+}
+
+.carousel {
+    background: #EEE;
+    width: auto;
+}
+  
+.carousel-cell {
+    width: 25%;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+  
+  /* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
+footer {
+    bottom: 0;
 }
