@@ -10,18 +10,15 @@
 
 body{
     background-color: var(--color4) !important ;
+    height: fit-content;
 }
 
 #botonAsc{
     height: 5vh;
-    position: fixed;
+    position: absolute;
     bottom: 7em;
     right: 5em;
     z-index: 999;
-}
-
-h2{
-    font-size: 4em !important; 
 }
 
 :root {
@@ -58,12 +55,12 @@ section{
     height: 50vh !important ;
 }
 
-#tomato {
+#tomato{
     right: 2em !important;
     top: 10em !important;
 }
 
-#lettuce {
+#lettuce{
     top: -20% !important;
     left: -10% !important;;
     transform: rotate(45deg) !important;
@@ -106,6 +103,10 @@ section{
     border-radius: 5px;
     counter-increment: carousel-cell;
 }
+
+#carousel-2 .carousel-cell {
+    width: 100%;
+}
   
   /* cell number */
 .carousel-cell:before {
@@ -117,10 +118,10 @@ section{
     color: white;
 }
 
-.flickity-page-dots {
+.flickity-page-dots{
     display: none;
 }
 
-footer {
+footer{
     bottom: 0;
 }
