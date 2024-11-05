@@ -24,7 +24,7 @@
 
     <!-- Menu -->
       <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary z-2 w-100 px-3">
+        <nav class="navbar navbar-expand-lg z-2 w-100 px-3" data-bs-theme="dark">
           <div class="container-fluid gap-3">
             <a class="navbar-brand" href="#">Ecomido</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,19 +51,19 @@
       </header>
 
 
-    <section class="container-fluid d-flex w-100 justify-content-center p-5" id="product">
-        <div class="row gap-5 d-flex w-100 justify-content-center">
-            <div class="col w-auto">
-                <img src="./img/miel_nibo.png" class="d-block w-100" alt="...">
+    <section class="container-fluid d-flex w-100 p-5 justify-content-center" id="product">
+        <div class="row d-flex w-100 justify-content-around">
+            <div class="col-xl-6 ">
+                <img src="./img/miel_nibo.png" class="bg-white rounded-4 producto" alt="...">
             </div>
-            <div class="col w-100 d-flex flex-column justify-content-between gap-3">
-                <div class="w-100 gap-3">
+            <div class="col-xl-5 d-flex flex-column justify-content-around gap-3">
+                <div class="gap-3 mt-3">
                     <h1 class="text-start">Miel de Nibo</h1>
                     <h2 class="text-start">250g</h2>
                 </div>
-                <div class="w-100">
-                    <h4 class="w-100">2,50 $ <br> (10 $/KILO)</h4>
-                    <button type="button" class="btn btn-primary text-center p-3 w-50 text-nowrap fs-4 mt-3">Añadir a la compra</button>
+                <div id="buyButton" class="gap-3 d-flex flex-column justify-content-between w-100 align-middle">
+                    <h4>2,50 $ <br> (10 $/KILO)</h4>
+                    <button type="button" class="btn btn-primary text-center p-3 w-auto fs-4 mt-3">Añadir a la compra</button>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
 
       <section class="p-5 rounded-3 w-100">
         <h2 class="pb-5">Te recomendamos</h2>
-        <div class="carousel w-100" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
             <div class="card carousel-cell">
                 <img src="./img/zanahoria.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -113,7 +113,7 @@
 
       <section class="p-5 rounded-3 w-100">
         <h2 class="pb-5">Otros compraron</h2>
-        <div class="carousel w-100" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
             <div class="card carousel-cell">
                 <img src="./img/naranja.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -154,19 +154,19 @@
       
       <section id="where" class="container-fluid d-flex flex-column justify-content-center align-items-center w-100 p-5">
         <div class="row d-flex justify-content-center align-items-center w-100 px-5 mt-5">
-          <div class="col w-100 d-flex flex-column justify-content-center align-items-center" >
+          <div class="col-4 d-flex flex-column justify-content-center align-items-center" >
             <div>
               <h4>Pide hoy, recibe hoy</h4>
               <p>Entrega rápida en la franja horaria que mejor te venga</p>
             </div>
           </div>
-          <div class="col w-100 d-flex flex-column justify-content-center align-items-center">
+          <div class="col-4  d-flex flex-column justify-content-center align-items-center">
             <div>
               <h4>Envío gratis</h4>
               <p>En compras superiores a 30€</p>
             </div>
           </div>
-          <div class="col w-100 d-flex flex-column justify-content-center align-items-center">
+          <div class="col-4 d-flex flex-column justify-content-center align-items-center">
             <div>
               <h4>Folletos</h4>
               <p>Descubre las mejores ofertas</p>
@@ -181,7 +181,7 @@
             <h5>Empleo</h5>
             <h5>Atencion al cliente</h5>
           </div>
-          <div class=" w-100 d-flex justify-content-end align-items-center gap-4">
+          <div class=" w-100 d-flex justify-content-end align-items-center gap-4 icons">
           <i class="bi bi-twitter-x fs-4"></i>
           <i class="bi bi-facebook fs-4"></i>
           <i class="bi bi-instagram fs-4"></i>

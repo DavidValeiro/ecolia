@@ -10,12 +10,40 @@
 
 body{
     background-color: var(--color4) !important ;
-    height: fit-content;
+}
+
+.navbar{
+    background-color: var(--color1) !important;
+}
+
+.form-control {
+    background-color: white!important;
+}
+
+.form-control::placeholder{
+    color: rgb(15, 15, 15)!important;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.flickity-button {
+    background: var(--color1) !important;
+    color: #fff !important;
+}
+
+.producto{
+    width: 100%;
+}
+
+.btn{
+    background-color: var(--color1) !important;
 }
 
 #botonAsc{
     height: 5vh;
-    position: absolute;
+    position: absolute !important;
     bottom: 7em;
     right: 5em;
     z-index: 999;
@@ -82,13 +110,14 @@ section{
 }
 
 #product h1 {
-    font-size: 4rem !important;
+    font-size: 6rem !important;
     text-wrap: nowrap;
+    line-height: 1 !important;
+    font-weight: bolder;
 }
 
 #product h2 {
     font-size: 2rem !important;
-    text-wrap: nowrap;
 }
 
 .carousel {
@@ -100,7 +129,7 @@ section{
     width: 25%;
     height: auto;
     margin-right: 2em;
-    border-radius: 5px;
+    border-radius: 20px !important;
     counter-increment: carousel-cell;
     margin-right: 2em !important;
 }
@@ -132,9 +161,9 @@ section{
 .carousel-cell:before {
     display: block;
     text-align: center;
-    content: counter(carousel-cell);
-    line-height: 200px;
-    font-size: 80px;
+    /* content: counter(carousel-cell); */
+    line-height: unset;
+    font-size: unset;
     color: white;
 }
 
@@ -157,22 +186,65 @@ footer{
     #inicio h1 {
         font-size: 6em;
     }
+
+    #product h1 {
+        font-size: 4rem !important;
+    }
+
+    .carousel-cell {
+        width: 50%;
+    }
+
+    #buyButton{
+        flex-direction: row !important;
+    }
+
+    #buyButton button{
+        margin: 0 !important;
+    }
+
+
 }   
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 470px) {
 
-}
+    #product h1 {
+        font-size: 2rem !important;
+    }
 
-@media screen and (max-width: 750px) {
+    h2 {
+        text-align: center !important;
+        margin-bottom: 3rem !important;
+    }
+
+    .row h2 {
+        margin-bottom: 0rem !important;
+    }
+
+    .carousel-cell {
+        width: 80%;
+    }
+
+    #buyButton button{
+        margin: 0 !important;
+        font-size: unset !important;
+    }
     
-    /* Se muestra el icono hamburguesa.*/
+    .row{
+        flex-direction: column;
+        gap: 2em;
+    }
 
-}
+    .col-4 {
+        width: 100% !important;
+    }
 
-@media screen and (max-width: 600px) {
+    #where {
+        padding-top: 0 !important;
+    }
 
-}
-
-@media screen and (max-width: 450px) {
+    footer .gap-4{
+        gap: 0.75em !important;
+    }
 
 }
