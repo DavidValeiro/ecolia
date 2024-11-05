@@ -45,7 +45,7 @@ section{
 }
 
 #inicio h1 {
-    color: var(--color3);
+    color: var(--color1);
     font-weight: bold;
     font-size: 8em !important;
 }
@@ -82,12 +82,12 @@ section{
 }
 
 #product h1 {
-    font-size: 6rem !important;
+    font-size: 4rem !important;
     text-wrap: nowrap;
 }
 
 #product h2 {
-    font-size: 4rem !important;
+    font-size: 2rem !important;
     text-wrap: nowrap;
 }
 
@@ -120,6 +120,14 @@ section{
     
 }
 
+#brands img {
+    width: 12em;
+}
+
+#brands img:hover {
+    transform: scale(1.5);
+}
+
   /* cell number */
 .carousel-cell:before {
     display: block;
@@ -146,6 +154,9 @@ footer{
 /* ADAPTACIONES RESPONSIVE */
 @media screen and (max-width: 1200px) {
 
+    #inicio h1 {
+        font-size: 6em;
+    }
 }   
 
 @media screen and (max-width: 1000px) {
@@ -155,31 +166,7 @@ footer{
 @media screen and (max-width: 750px) {
     
     /* Se muestra el icono hamburguesa.*/
-    #menu {
-        padding: 1em;
-        position: fixed top;
-    }
 
-    #menu > i {
-        display: block;
-    }
-
-    #menu > ul {
-        display: none;
-        height: auto;
-        padding: 1em;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #menu > ul > li {
-        margin: 0.2em 0;
-    }
-
-    #menu > ul > li > a {
-        font-family: 'Paytone One', sans-serif;
-        text-decoration: none;
-    }
 }
 
 @media screen and (max-width: 600px) {
