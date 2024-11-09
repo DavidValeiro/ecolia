@@ -25,40 +25,62 @@
     <a href="#"><img id="botonAsc" src="./img/botonAsc.svg" alt="flor" href="#"/></a>
    
     <!-- Menu -->
-    <header>
-      <header class="sticky-top ">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary z-2 w-100 px-3">
-          <div class="container-fluid gap-3">
-            <a class="navbar-brand" href="#">Ecomido</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-              </form>
-            </div>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg z-2 w-100 px-3" data-bs-theme="dark">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">Ecomido</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <div class="vr mx-2"></div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#promo">Ofertas</a>
+              </li>
+              <div class="vr mx-2"></div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#popu">Populares</a>
+              </li>
+              <div class="vr mx-2"></div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#cook">Recetas</a>
+              </li>
+              <div class="vr mx-2"></div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#pack">Packs</a>
+              </li>
+              <div class="vr mx-2"></div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#brands">Marcas</a>
+              </li>
+              <div class="vr mx-2"></div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#where">¿Donde estamos?</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
     </header>
 
     <!-- pagina home -->
       <section id="inicio" class="container-fluid d-flex flex-column align-items-center justify-content-center w-100 position-relative">
         <img id="logoMain" class="position-absolute start-45" src="./img/logo_ecomido.svg" alt="logo" id="logo" />
-        <div class="container-fluid d-flex flex-column align-items-center justify-content-center w-10 px-5">
-          <h1 class="w-100 d-flex justify-content-start text-nowrap">Tu tienda</h1>
-          <h1 class="w-100 d-flex justify-content-center text-nowrap">ecológica</h1>
-          <h1 class="w-100 d-flex justify-content-end text-nowrap">de confianza</h1>
+        <div class="container-fluid d-flex flex-column align-items-center justify-content-center w-10 px-5 texto">
+          <h1 class="d-flex justify-content-start text-nowrap tittle">Tu tienda</h1>
+          <h1 class="d-flex justify-content-center text-nowrap tittle">ecológica</h1>
+          <h1 class="d-flex justify-content-end text-nowrap tittle">de confianza</h1>
         </div>
-        <img class="position-absolute bottom-0 end-0" src="./img/tomate.png" alt="tomate" id="tomato" />
+        <img class="position-absolute youSpinMeRound2 " src="./img/tomate.png" alt="tomate" id="tomato" />
         <img class="position-absolute" src="./img/lechuga.png" alt="lechuga" id="lettuce" />
-        <img class="position-absolute bottom-0 start-0" src="./img/cerezas.png" alt="cerezas" id="cherry" />
+        <img class="position-absolute youSpinMeRound " src="./img/cerezas.png" alt="cerezas" id="cherry" />
       </section>
 
     <!-- carousel de ofertas -->
@@ -66,35 +88,35 @@
       <h2 class="pb-5">Ofertas</h2>
       <div class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
         <div class="card carousel-cell">
-            <img src="./img/platano.png" class="card-img-top" alt="...">
+          <a href="articulo.html"> <img src="./img/platano.png" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h3>$3/Kg</h3>
               <p class="card-text">Plátano de Canarias</p>
             </div>
           </div>
         <div class="card carousel-cell">
-            <img src="./img/arroz.png" class="card-img-top" alt="...">
+           <a href="articulo.html"></a> <img src="./img/arroz.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h3>$4/Kg</h3>
               <p class="card-text">Arroz ecológico</p>
             </div>
         </div>
         <div class="card carousel-cell">
-            <img src="./img/cafe.png" class="card-img-top" alt="...">
+            <a href="articulo.html"><img src="./img/cafe.png" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h3>$12/Kg</h3>
               <p class="card-text">Café en grano</p>
             </div>
           </div>
         <div class="card carousel-cell">
-            <img src="./img/fresas.png" class="card-img-top" alt="...">
+           <a href="articulo.html"><img src="./img/fresas.png" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h3>$5/Kg</h3>
               <p class="card-text">Fresas frescas</p>
             </div>
           </div>
         <div class="card carousel-cell">
-            <img src="./img/miel_nibo.png" class="card-img-top" alt="...">
+           <a href="articulo.html"><img src="./img/miel_nibo.png" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h3>$10/Kg</h3>
               <p class="card-text">Miel de Nibo</p>
@@ -108,35 +130,35 @@
       <h2 class="pb-5">Populares</h2>
       <div class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
         <div class="card carousel-cell">
-            <img src="./img/zanahoria.png" class="card-img-top" alt="...">
+            <a href="articulo.html"><img src="./img/zanahoria.png" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h3>$3/Kg</h3>
               <p class="card-text">Zanahorias de Granada</p>
             </div>
           </div>
         <div class="card carousel-cell">
-            <img src="./img/nueces.png" class="card-img-top" alt="...">
+            <a href="articulo.html"><img src="./img/nueces.png" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h3>$3/Kg</h3>
               <p class="card-text">Nueces peladas</p>
             </div>
         </div>
         <div class="card carousel-cell">
-            <img src="./img/naranja.png" class="card-img-top" alt="...">
+            <a href="articulo.html"><img src="./img/naranja.png" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h3>$5/Kg</h3>
               <p class="card-text">Naranjas de Valencia</p>
             </div>
           </div>
         <div class="card carousel-cell">
-            <img src="./img/tomate.png" class="card-img-top" alt="...">
+            <a href="articulo.html"><img src="./img/tomate.png" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h3>$6/Kg</h3>
               <p class="card-text">Tomate de corazón de buey</p>
             </div>
           </div>
         <div class="card carousel-cell">
-            <img src="./img/mermelada_frambuesa.png" class="card-img-top" alt="...">
+            <a href="articulo.html"><img src="./img/mermelada_frambuesa.png" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h3>$8/Kg</h3>
               <p class="card-text">Frambuesas de monte</p>
@@ -150,36 +172,21 @@
       <h2 class="pb-5">Cocina con nosotros</h2>
       <div id="carousel-2" class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
           <div class="card carousel-cell">
-              <img src="./img/receta_ensalada_higos.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Ensalada de higos</p>
-              </div>
+            <a href="articulo.html"><img src="./img/receta_ensalada_higos.jpg" class="card-img-top z-2" alt="..."></a>
             </div>
           <div class="card carousel-cell">
-              <img src="./img/receta_espinacas.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Receta de guiso de espinacas</p>
-              </div>
+             <a href="articulo.html"><img src="./img/receta_frutas.jpg" class="card-img-top z-2" alt="..."></a> 
+            </div>
+          <div class="card carousel-cell">
+            <a href="articulo.html"><img src="./img/receta_humus.jpg" class="card-img-top z-2" alt="..."></a>
           </div>
           <div class="card carousel-cell">
-              <img src="./img/receta_frutas.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Macedonia con frutas frescas</p>
-              </div>
-            </div>
-          <div class="card carousel-cell">
-              <img src="./img/receta_judias.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Judías al vapor con patatas</p>
-              </div>
-            </div>
-          <div class="card carousel-cell">
-              <img src="./img/receta_humus.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Humus con pimentón casero</p>
-              </div>
+             <a href="articulo.html"><img src="./img/receta_judias.jpg" class="card-img-top z-2" alt="..."></a>
           </div>
-       </div>
+          <div class="card carousel-cell">
+             <a href="articulo.html"><img src="./img/receta_humus.jpg" class="card-img-top z-2" alt="..."></a>
+          </div>
+      </div>
      </section>
 
      <!-- carousel vuestros packs favoritos -->
@@ -187,39 +194,19 @@
       <h2 class="pb-5">Vuestros packs favoritos</h2>
       <div id="carousel-3" class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
         <div class="card carousel-cell">
-            <img src="./img/pack-01.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3>Desde Desde $28</h3>
-              <p class="card-text">Pack de queso y uvas</p>
-            </div>
+            <a href="articulo.html"><img src="./img/pack-01.png" class="card-img-top" alt="..."></a>
           </div>
         <div class="card carousel-cell">
-            <img src="./img/pack-02.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3>Desde $16</h3>
-              <p class="card-text">Packs para hacer macedonia</p>
-            </div>
+          <a href="articulo.html"><img src="./img/pack-02.png" class="card-img-top" alt="..."></a>
         </div>
         <div class="card carousel-cell">
-            <img src="./img/pack-03.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3>Desde $20</h3>
-              <p class="card-text">Pack de ensalada de la temporada</p>
-            </div>
+          <a href="articulo.html"><img src="./img/pack-03.png" class="card-img-top" alt="..."></a>
           </div>
         <div class="card carousel-cell">
-            <img src="./img/pack-04.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3>Desde $24</h3>
-              <p class="card-text">Pack para merienda de mermelada</p>
-            </div>
-          </div>
+          <a href="articulo.html"><img src="./img/pack-04.png" class="card-img-top" alt="..."></a>
+        </div>
         <div class="card carousel-cell">
-            <img src="./img/pack-05.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3>Desde $18</h3>
-              <p class="card-text">Pack de la ensalada con arroz</p>
-            </div>
+          <a href="articulo.html"><img src="./img/pack-05.png" class="card-img-top" alt="..."></a>
         </div>
      </div>
      </section>
@@ -229,22 +216,22 @@
         <h2>¿Conoces nuestras marcas?</h2>
         <div class="row  d-flex align-items-center justify-content-between w-100 mt-5 gap-3">
           <div class="col d-flex align-items-center justify-content-center">
-            <img src="./img/Logo-01.png">
+            <img src="./img/Logo-01.png" class="marca">
           </div>
           <div class="col d-flex align-items-center justify-content-center">
-            <img src="./img/Logo-02.png">
+            <img src="./img/Logo-02.png" class="marca">
           </div>
           <div class="col d-flex align-items-center justify-content-center">
-            <img src="./img/Logo-03.png">
+            <img src="./img/Logo-03.png" class="marca">
           </div>
           <div class="col d-flex align-items-center justify-content-center">
-            <img src="./img/Logo-04.png">
+            <img src="./img/Logo-04.png" class="marca">
           </div>
           <div class="col d-flex align-items-center justify-content-center">
-            <img src="./img/Logo-05.png">
+            <img src="./img/Logo-05.png" class="marca">
           </div>
           <div class="col d-flex align-items-center justify-content-center">
-            <img src="./img/Logo-06.png">
+            <img src="./img/Logo-06.png" class="marca">
           </div>
         </div>
       </section>

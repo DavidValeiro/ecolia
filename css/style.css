@@ -10,7 +10,35 @@
 
 body{
     background-color: var(--color4) !important ;
+    overflow-x: hidden;
 }
+
+.vr{
+    color: var(--color4) !important;
+}
+
+.youSpinMeRound {
+    animation: spinning  1.1s  infinite, spinningI 1s  infinite ;
+    animation-direction: alternate;
+  }
+
+  .youSpinMeRound2 {
+    animation: spinningI  1.1s  infinite, spinning 1s  infinite ;
+    animation-direction: alternate;
+  }
+  
+  @keyframes  spinning{
+    100%{
+      transform:rotate(0.11turn);
+    }
+  }
+
+  @keyframes  spinningI{
+    100%{
+      transform:rotate(-0.11turn);
+    }
+  }
+
 
 .navbar{
     background-color: var(--color1) !important;
@@ -43,7 +71,7 @@ body{
 
 #botonAsc{
     height: 5vh;
-    position: absolute !important;
+    position: fixed !important;
     bottom: 7em;
     right: 5em;
     z-index: 999;
@@ -66,6 +94,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem !important;
+}
+
+.tittle{
+    width: 85%;
 }
 
 section{
@@ -73,14 +106,15 @@ section{
 }
 
 #inicio h1 {
-    color: var(--color1);
-    font-weight: bold;
-    font-size: 8em !important;
+    color: var(--color3);
+    font-weight: 800;
+    font-size: 10em !important;
 }
 
 #cherry {
     left: 2em !important ;
     height: 50vh !important ;
+    bottom: 0;
 }
 
 #tomato{
@@ -105,6 +139,7 @@ section{
 }
 
 #logoMain{
+    margin-top: 2rem !important;
     top: 0 !important;
     height: 15vh !important;
 }
@@ -118,6 +153,10 @@ section{
 
 #product h2 {
     font-size: 2rem !important;
+}
+
+h2{
+    font-size: 4rem !important;;
 }
 
 .carousel {
@@ -136,16 +175,25 @@ section{
 
 #carousel-2 {
     padding: 0 10em;
+    height: 100%;
 }
 
+
 #carousel-2 .carousel-cell {
-    width: 100%;
-    height: 700px;
+    overflow: hidden;
+}
+
+
+#carousel-2 .carousel-cell > img {
+    object-fit: cover;
+}
+
+#carousel-3{
+    height: 100%;
 }
 
 #carousel-3 .carousel-cell {
-    width: 70%;
-    height: 700px;
+    width: 90%;
     
 }
 
@@ -153,7 +201,7 @@ section{
     width: 12em;
 }
 
-#brands img:hover {
+.hoverimg {
     transform: scale(1.5);
 }
 
@@ -180,11 +228,27 @@ footer{
 }
 
 
+
+
 /* ADAPTACIONES RESPONSIVE */
 @media screen and (max-width: 1200px) {
 
+    #cherry {
+        height: 40vh !important ; 
+        left: 20% !important;
+    }
+    
+    #tomato{
+        top: 6em !important;
+    }
+
+    .texto {
+        margin-bottom: 8rem !important;
+    }
+
     #inicio h1 {
-        font-size: 6em;
+        font-size: 6em !important;
+        justify-content: center !important;
     }
 
     #product h1 {
@@ -202,23 +266,67 @@ footer{
     #buyButton button{
         margin: 0 !important;
     }
+    
+    #tomato{
+        display: none;
+    }
+    
+    #lettuce{
+        display: none;
+    }
 
 
 }   
 
 @media screen and (max-width: 470px) {
 
+    .tittle {
+        font-size: 3em !important;
+    }
+
+    #carousel-2 {
+        padding: 0;
+        height: 100%;
+    }
+
+    #cherry{
+        bottom: 2rem;
+    }
+    
+    #carousel-2 .carousel-cell {
+        overflow: hidden;
+    }
+
+
+    #carousel-2 .carousel-cell > img {
+        object-fit: cover;
+    }
+    
+    #botonAsc{
+       display: none;
+    }
+
     #product h1 {
         font-size: 2rem !important;
     }
 
+    #inicio h1 {
+        font-size: 3em !important;
+        justify-content: center !important;
+    }
+    
     h2 {
         text-align: center !important;
         margin-bottom: 3rem !important;
+        font-size: 2rem !important;
     }
 
     .row h2 {
         margin-bottom: 0rem !important;
+    }
+
+    .row {
+        align-items: start !important;
     }
 
     .carousel-cell {
@@ -241,10 +349,15 @@ footer{
 
     #where {
         padding-top: 0 !important;
+        align-items: start;
     }
 
     footer .gap-4{
         gap: 0.75em !important;
+    }
+
+    .vr{
+        display: none !important;
     }
 
 }
