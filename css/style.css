@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;0,400;1,100..900&family=Paytone+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;0,400;1,100..900&family=Paytone+One&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 
 * {
     margin: 0 !important;
@@ -79,7 +81,7 @@ body{
 
 :root {
     --color1: rgb(47, 49, 210);
-    --color2: rgb(235, 115, 30);
+    /* --color2: rgb(235, 115, 30); */
     --color3: rgb(28, 28, 28);
     --color4: rgb(255, 246, 229);
     --textTitol: "Archivo", sans-serif;
@@ -156,7 +158,9 @@ section{
 }
 
 h2{
-    font-size: 4rem !important;;
+    font-family: "Orbitron", sans-serif;
+    font-size: 4rem !important;
+    color: var(--color1) !important; 
 }
 
 .carousel {
