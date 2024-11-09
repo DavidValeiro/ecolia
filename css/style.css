@@ -290,6 +290,7 @@ footer{
     }
 
     #cherry{
+        left: 10% !important;
         bottom: 2rem;
     }
     
